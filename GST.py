@@ -179,8 +179,17 @@ def extract_table_3_1(pdf):
     return pd.DataFrame(columns=expected_columns)
 
 def extract_table_6_1(pdf):
-    expected_columns = ["Description", "Total Tax Payable", "Tax Paid Through ITC",
-                       "Tax Paid in Cash", "Interest Paid in Cash", "Late Fee Paid in Cash"]
+    expected_columns = [
+        "Description", 
+        "Total Tax Payable", 
+        "Tax Paid Through ITC (Integrated)", 
+        "Tax Paid Through ITC (Central)", 
+        "Tax Paid Through ITC (State/UT)", 
+        "Tax Paid Through ITC (Cess)",
+        "Tax Paid in Cash", 
+        "Interest Paid in Cash", 
+        "Late Fee Paid in Cash"
+    ]
     
     for page in pdf.pages:
         text = page.extract_text()
