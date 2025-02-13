@@ -209,9 +209,8 @@ def extract_table_6_1(pdf):
 # Main Application Logic
 if gst_type == "GSTR-1":
     st.title("📄 GSTR-1 Extraction Tool")
-    st.write("Upload GSTR-1 PDFs to extract GST details")
     
-    uploaded_files = st.file_uploader("Upload PDFs", type=["pdf"], accept_multiple_files=True)
+    uploaded_files = st.file_uploader("Upload GSTR-1 PDFs", type=["pdf"], accept_multiple_files=True)
     
     if uploaded_files:
         data = []
@@ -253,8 +252,7 @@ if gst_type == "GSTR-1":
         st.dataframe(filtered_df)
 
 else:  # GSTR-3B
-    st.title("GSTR-3B Extraction Tool")
-    st.write("Upload GSTR-3B PDFs to extract GST details")
+    st.title("📄 GSTR-3B Extraction Tool")
     
     uploaded_files = st.file_uploader("Upload GSTR-3B PDFs", type="pdf", accept_multiple_files=True)
     
