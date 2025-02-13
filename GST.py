@@ -209,7 +209,7 @@ def extract_table_6_1(pdf):
 # Main Application Logic
 if gst_type == "GSTR-1":
     st.title("📄 GSTR Extraction Tool")
-    st.write("Upload GSTR-1 PDFs to extract GST details and Total Liability")
+    st.write("Upload GSTR-1 & GSTR-3B PDFs to extract GST details")
     
     uploaded_files = st.file_uploader("Upload PDFs", type=["pdf"], accept_multiple_files=True)
     
