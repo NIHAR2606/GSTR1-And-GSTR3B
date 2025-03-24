@@ -516,7 +516,7 @@ if gst_type == "GSTR-1":
  
 else:  # GSTR-3B
     st.title("📄 GSTR-3B Data Extraction Tool")
-    st.write("Drag and Drop or Upload GSTR-1 PDFs to extract details")
+    st.write("Drag and Drop or Upload GSTR-3B PDFs to extract details")
    
     uploaded_files = st.file_uploader("", type="pdf", accept_multiple_files=True)
    
