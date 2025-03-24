@@ -393,7 +393,7 @@ if gst_type == "GSTR-1":
     st.title("📄 GSTR-1 Data Extraction Tool")
     st.write("Upload GSTR-1 PDFs to extract Details")
    
-    uploaded_files = st.file_uploader("Upload GSTR-1PDFs", type=["pdf"], accept_multiple_files=True)
+    uploaded_files = st.file_uploader("", type=["pdf"], accept_multiple_files=True)
    
     if uploaded_files:
         data = []
@@ -518,7 +518,7 @@ else:  # GSTR-3B
     st.title("📄 GSTR-3B Data Extraction Tool")
     st.write("Upload GSTR-3B PDFs to extract Details")
    
-    uploaded_files = st.file_uploader("Upload GSTR-3B PDFs", type="pdf", accept_multiple_files=True)
+    uploaded_files = st.file_uploader("", type="pdf", accept_multiple_files=True)
    
     if uploaded_files:
         all_general_details = []
