@@ -39,6 +39,9 @@ else:
 # Add sidebar for GST type selection
 st.sidebar.title("GST Return Type")
 gst_type = st.sidebar.radio("Select GST Return Type", ["GSTR-1", "GSTR-3B"])
+
+# Add refresh note
+st.sidebar.info("🔄 Kindly refresh the page to upload new files or start again.")
  
 # GST State Code Mapping
 GST_STATE_CODES = {
