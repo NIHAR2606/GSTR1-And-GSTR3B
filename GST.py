@@ -23,7 +23,7 @@ else:
 # After the logo display code in the sidebar section
 
 # Add User Manual download button below the logo
-manual_path = ASSETS_DIR / "User Manual.pdf"
+manual_path = ASSETS_DIR / "User Manual.docx"
 if manual_path.exists():
     with open(manual_path, "rb") as manual_file:
         st.sidebar.download_button(
@@ -689,4 +689,5 @@ else:  # GSTR-3B
        
         with open(output_excel, "rb") as f:
             st.download_button("Download Filtered Data", f, file_name="GSTR3B_Filtered.xlsx")
+
 
