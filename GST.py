@@ -17,7 +17,7 @@ ASSETS_DIR.mkdir(exist_ok=True)
 # Add logo to the sidebar
 logo_path = ASSETS_DIR / "GST_Logo.png"
 if logo_path.exists():
-    st.sidebar.image(str(logo_path), width=150)  # Reduced from 275 to 150
+    st.sidebar.image(str(logo_path), width=100)  # Reduced from 275 to 150
 else:
     st.sidebar.warning("Logo file not found. Please place 'GST_Logo.png' in the assets directory.")
 # After the logo display code in the sidebar section
@@ -689,6 +689,7 @@ else:  # GSTR-3B
        
         with open(output_excel, "rb") as f:
             st.download_button("Download Filtered Data", f, file_name="GSTR3B_Filtered.xlsx")
+
 
 
 
