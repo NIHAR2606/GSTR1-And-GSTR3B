@@ -15,7 +15,7 @@ ASSETS_DIR = Path("assets")
 ASSETS_DIR.mkdir(exist_ok=True)
  
 # Add logo to the sidebar
-logo_path = ASSETS_DIR / "kkc logo 1.png"
+logo_path = ASSETS_DIR / "GST_Logo.png"
 if logo_path.exists():
     st.sidebar.image(str(logo_path), width=275)
 else:
@@ -689,3 +689,4 @@ else:  # GSTR-3B
        
         with open(output_excel, "rb") as f:
             st.download_button("Download Filtered Data", f, file_name="GSTR3B_Filtered.xlsx")
+
